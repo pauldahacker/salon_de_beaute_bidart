@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeBanner from '../components/HomeBanner.astro'
+---
+
+<Layout>
+	<h1 class="sr-only">
+  		L’Atelier Zen – Institut de beauté et bien-être à Bidart
+	</h1>
+
+	<HomeBanner>
+	</HomeBanner>
+	<section class="pt-16 pb-16 bg-brown-light">
+		<div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 px-6">
+  			<h2 class="md:col-span-2 text-2xl md:text-4xl font-bold md:tracking-widest text-center uppercase">
+    			L’Atelier Zen, Institut de beauté et bien-être à Bidart
+  			</h2>
+
+  			<p class="text-lg text-gray-700 max-w-xl text-center">
+    			Inspiré par l’océan et le rythme apaisant du Pays Basque,
+    			L’Atelier Zen vous invite à vous laisser emporter
+   				par un moment de calme, de douceur et de reconnexion.
+  			</p>
+
+  			<p class="text-lg text-gray-700 max-w-xl text-center">
+    			Dans un espace chaleureux, femmes et hommes
+    			sont accueillis avec écoute et bienveillance,
+    			pour vivre une parenthèse de détente
+    			loin de l’agitation du quotidien.
+  			</p>
+
+			<p class="md:col-span-2 mx-auto text-xl italic">
+    			« Prendre le temps de ralentir, c’est déjà prendre soin de soi. »
+  			</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-neutral-100">
+  			<div class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
+    			<div class="max-w-2xl mx-auto">
+      				<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
+        				L’expertise au service du bien-être
+      				</h3>
+      				<p class="text-lg text-gray-700">
+        				Chaque soin est réalisé avec précision et attention.
+        				À L’Atelier Zen, les gestes sont maîtrisés, l’écoute est essentielle,
+        				et chaque prestation est pensée pour répondre aux besoins réels du corps et de l’esprit.
+      				</p>
+    			</div>
+  			</div>
+  			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
+    			<img
+      				src="/src/assets/skin_1.jpg"
+      				alt="Séance à l'Institut de beauté à Bidart"
+      				class="w-full h-full object-cover"
+    			/>
+  			</div>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-brown-light">
+			<div class="w-full h-[30vh] md:h-full overflow-hidden">
+				<img
+    				src="/src/assets/massage_1.jpg"
+    				alt="Soin de visage à l'Institut de beauté à Bidart"
+    				class="w-full h-full object-cover"
+  				/>
+			</div>
+			<div class="flex items-center px-6 py-12 md:py-0">
+				<div class="max-w-2xl mx-auto">
+					<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
+						Une expérience sur mesure
+					</h3>
+					<p class="text-lg text-gray-700">
+  						Avant chaque soin, un temps d’échange permet de comprendre vos attentes, 
+						vos habitudes et les besoins de votre peau. Massages, soins du visage ou 
+						rituels sont ainsi adaptés, pour une expérience réellement sur mesure.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-neutral-100">
+  			<div class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
+    			<div class="max-w-2xl mx-auto">
+      				<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
+        				Des produits d'excellence
+      				</h3>
+      				<p class="text-lg text-gray-700">
+        				Les produits utilisés sont sélectionnés avec soin, pour leur efficacité, 
+						leur sensorialité et leur respect de la peau. Chaque soin s’inscrit dans 
+						une approche douce, attentive à l’équilibre naturel du corps.
+      				</p>
+    			</div>
+  			</div>
+  			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
+    			<img
+      				src="/src/assets/portrait_1.jpg"
+      				alt="Résultat d'une expérience à l'Institut de beauté à Bidart"
+      				class="w-full h-full object-cover"
+    			/>
+  			</div>
+		</div>
+	</section>
+
+
+	<section class="bg-white pb-12">
+  		<h2 class="pt-16 mb-12 text-center text-2xl md:text-4xl font-bold md:tracking-widest uppercase">
+    		Nos services
+  		</h2>
+
+  		<div class="max-w-5xl px-4 mx-auto grid gap-10 md:gap-20 sm:grid-cols-2 lg:grid-cols-3 text-center text-gray-700">
+    		<a href="/services#visage" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+      					src="/src/assets/face1.png"
+      					alt=""
+      					class="w-full h-full object-cover"
+    				/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Soins du visage</h3>
+      			<p class="text-sm">
+        			Nettoyages & soins profonds pour une peau lumineuse.
+      			</p>
+    		</a>
+
+    		<a href="/services#regard" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+      					src="/src/assets/eyes1.png"
+      					alt=""
+      					class="w-full h-full object-cover"
+    				/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Beauté du regard</h3>
+      			<p class="text-sm">
+        			Rehaussement de cils, extensions, coloration & browlift.
+      			</p>
+    		</a>
+
+			<a href="/services#mains" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+      					src="/src/assets/hands.png"
+      					alt=""
+      					class="w-full h-full object-cover"
+    				/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Beauté des mains & pieds</h3>
+      			<p class="text-sm">
+        			Manucure express, vernis semi-permanent & beauté des pieds.
+      			</p>
+    		</a>
+
+			<a href="/services#relaxant" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+      					src="/src/assets/massage1.png"
+      					alt=""
+      					class="w-full h-full object-cover"
+    				/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Soins relaxants</h3>
+      			<p class="text-sm">
+        			Modelages relaxants & rituels détente.
+      			</p>
+    		</a>
+
+    		<a href="/services#epilations" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+      					src="/src/assets/wax1.png"
+      					alt=""
+      					class="w-full h-full object-cover"
+    				/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Épilation</h3>
+      			<p class="text-sm">
+        			Épilation Homme/Femme classique ou lumière pulsée.
+      			</p>
+    		</a>
+
+			<a href="/services#technologies" class="hover:opacity-75">
+				<div class="aspect-square w-full overflow-hidden">
+					<img
+    					src="/src/assets/weightloss1.png"
+    					alt=""
+    					class="w-full h-full object-cover"
+  					/>
+				</div>
+      			<h3 class="text-lg mb-2 font-semibold">Technologies esthétiques</h3>
+      			<p class="text-sm">
+        			Bronzage & Amincissement.
+      			</p>
+    		</a>
+  		</div>
+
+  	<div class="text-center mt-16 pb-20">
+    	<a href="/services" class="bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
+ 			Voir tous les soins détaillés
+  		</a>
+	</div>
+</section>
+
+
+  	
+</Layout>

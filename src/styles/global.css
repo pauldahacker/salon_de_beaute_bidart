@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brown: #E4DBD3;
+  --color-brown-light: #F5F2EF;
+  --color-brown-dark: #4f3b26;
+}
+
+body {
+    font-family: 'Tenor Sans', 'Cormorant', 'Arsenal SC', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Cormorant', serif;
+}
+
+.font-title {
+  font-family: 'Belleza', serif
+}
+
+.font-body {
+  font-family: 'Tenor Sans', system-ui, sans-serif;
+}

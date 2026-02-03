@@ -1,0 +1,41 @@
+---
+import '../styles/global.css'
+---
+
+<header class="top-0 sticky relative h-[10vh] z-50 bg-neutral-50 border-b">
+    <div class="max-w-5xl px-6 md:px-0 h-full mx-auto flex items-center justify-between">
+       	<a href="/" class="text-3xl md:text-4xl font-heading font-bold">
+ 			L'Atelier Zen
+		</a>
+    	<nav class="hidden md:flex text-md">
+        	<a href="/" class="px-6 py-2 border-2 border-transparent hover:border-gray-900 transition">
+                Accueil
+            </a>
+        	<a href="/services" class="px-6 py-2 border-2 border-transparent hover:border-gray-900 transition">
+                Services
+            </a>
+        	<a href="/contact" class="px-6 py-2 border-2 border-transparent hover:border-gray-900 transition">
+                Contact
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="ml-4 inline-block bg-black text-gray-100 px-5 py-2 text-sm border-2 border-black hover:bg-transparent hover:text-gray-900 transition">
+                Prendre rendez-vous
+            </a>
+        </nav>
+
+   		<button id="menu-button" class="md:hidden text-2xl" aria-label="Menu">
+ 			☰
+		</button>
+				
+		<!-- Mobile menu content -->
+		<nav id="mobile-menu" class="md:hidden hidden absolute top-full left-0 w-full bg-neutral-50 border-b border-t">
+  			<ul class="flex flex-col text-center pt-6 space-y-4">
+                
+    			<li><a href="/" class="block">Accueil</a></li>
+    			<li><a href="/services" class="block">Services</a></li>
+    			<li><a href="/contact" class="block">Contact</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="block bg-black text-gray-100 px-5 py-2 border-2 border-black hover:bg-transparent hover:text-gray-900 transition">Prendre rendez-vous</a></li>
+                
+  			</ul>
+		</nav>
+    </div>
+</header>

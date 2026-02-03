@@ -1,0 +1,51 @@
+---
+import '../styles/global.css'
+import SiteHeader from '../components/SiteHeader.astro'
+import SiteFooter from '../components/SiteFooter.astro'
+const { title = "L'Atelier Zen - Institut de Beauté à Bidart", description = "Soins du visage et du corps, massages et bien-être à Bidart. Prenez rendez-vous à L'Atelier Zen pour un moment de détente." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Tenor+Sans&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="text-gray-900 bg-white font-body">
+		<SiteHeader>
+		</SiteHeader>
+		<main>
+			<slot />
+    	</main>
+		<SiteFooter>
+		</SiteFooter>
+	</body>
+
+	
+
+	<script>
+		const button = document.getElementById("menu-button");
+  		const menu = document.getElementById("mobile-menu");
+
+		if (button && menu) {
+			button.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+    		});
+
+    		document.querySelectorAll("#mobile-menu a").forEach(link => {
+      			link.addEventListener("click", () => {
+        			menu.classList.add("hidden");
+      			});
+    		});
+  		}
+	</script>
+</html>
+
+
+
