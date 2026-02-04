@@ -10,35 +10,45 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-3xl md:text-5xl uppercase">Contactez-nous</h1>
     </section>
     
-    <section class="mt-20 md:mt-6">
+    <section class="mt-20">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-12 px-6">
             <div class="bg-brown p-12 text-gray-900 my-auto text-center">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition mb-4">
+                <p class="font-bold uppercase mb-2">Horaires</p>
+                <ul class=" space-y-1 mb-8">
+                    <li>Lundi : 9h – 18h</li>
+                    <li>Mardi : 9h – 18h</li>
+                    <li>Mercredi : 9h – 18h</li>
+                    <li>Jeudi : 9h – 18h</li>
+                    <li>Vendredi : 9h – 18h</li>
+                    <li>Samedi : 9h – 13h</li>
+                    <li>Dimanche : Fermé</li>
+                </ul>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition mb-8">
                     Rendez-vous en ligne
                 </a>
                 <p class="mb-4">
-                    📍 13 Rue de la Madeleine, 64210 Bidart</p>
+                    07 52 03 73 64</p>
                 <p class="mb-4">
-                    📞 07 52 03 73 64</p>
-                <p class="mb-4">
-                    ✉️ contact@atelier-zen.fr
+                    contact@atelier-zen.fr
                 </p>
-
-                <iframe
-                    class="w-full h-64 border"
+                <p class="mb-4">
+                    13 Rue de la Madeleine, 64210 Bidart</p>
+            </div>
+            <iframe
+                    class="w-full aspect-square md:h-full mt-8 md:mt-0 border"
                     loading="lazy"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.006885462749!2d-1.594510623176179!3d43.439572171113184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51148424a270d3%3A0x9bf59df6d7509ae7!2s13%20Rue%20de%20la%20Madeleine%2C%2064210%20Bidart!5e0!3m2!1sen!2sfr!4v1769526962568!5m2!1sen!2sfr"
                     title="Carte – Institut de Beauté à Bidart"
-                ></iframe>
-            </div>
+            ></iframe>
+        </div>
 
-            <div class="p-12">
+        <div class="p-12 max-w-6xl mx-auto">
                 <h2 class="text-2xl mb-4 uppercase">Une question ?</h2>
                 <p class="text-gray-600 mb-6">
                     N’hésitez pas à nous laisser un message, nous vous répondrons rapidement.
                 </p>
 
-                <form name="contact" method="POST" data-netlify="true" class="space-y-4">
+                <form name="contact" method="POST" data-netlify="true" action="/merci" class="space-y-4">
                     <input type="hidden" name="form-name" value="contact" />
 
                     <div>
@@ -85,9 +95,5 @@ import Layout from '../layouts/Layout.astro';
                     </button>
                 </form>
             </div>
-
-            
-
-        </div>
     </section>
 </Layout>
