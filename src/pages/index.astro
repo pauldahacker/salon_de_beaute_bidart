@@ -1,4 +1,15 @@
 ---
+import { Image } from 'astro:assets';
+import skin from '/src/assets/skin_1.jpg';
+import faceTreatment from '/src/assets/facetreatment.jpg';
+import portrait from '/src/assets/portrait_1.jpg';
+import eyes1 from '/src/assets/eyes1.png';
+import face1 from '/src/assets/face1.png';
+import hands from '/src/assets/hands.png';
+import massage1 from '/src/assets/massage1.png';
+import wax1 from '/src/assets/wax1.png';
+import weightloss1 from '/src/assets/weightloss1.png';
+
 import Layout from '../layouts/Layout.astro';
 import HomeBanner from '../components/HomeBanner.astro'
 ---
@@ -50,21 +61,13 @@ import HomeBanner from '../components/HomeBanner.astro'
     			</div>
   			</div>
   			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
-    			<img
-      				src="/src/assets/skin_1.jpg"
-      				alt="Séance à l'Institut de beauté à Bidart"
-      				class="w-full h-full object-cover"
-    			/>
+    			<Image src={skin} alt="Séance à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
   			</div>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-brown-light">
 			<div class="w-full h-[30vh] md:h-full overflow-hidden">
-				<img
-    				src="/src/assets/massage_1.jpg"
-    				alt="Soin de visage à l'Institut de beauté à Bidart"
-    				class="w-full h-full object-cover"
-  				/>
+				<Image src={faceTreatment} alt="Soin de visage à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
 			</div>
 			<div class="flex items-center px-6 py-12 md:py-0">
 				<div class="max-w-2xl mx-auto">
@@ -94,11 +97,7 @@ import HomeBanner from '../components/HomeBanner.astro'
     			</div>
   			</div>
   			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
-    			<img
-      				src="/src/assets/portrait_1.jpg"
-      				alt="Résultat d'une expérience à l'Institut de beauté à Bidart"
-      				class="w-full h-full object-cover"
-    			/>
+    			<Image src={portrait} alt="Résultat d'une expérience à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
   			</div>
 		</div>
 	</section>
@@ -112,11 +111,7 @@ import HomeBanner from '../components/HomeBanner.astro'
   		<div class="max-w-5xl px-4 mx-auto grid gap-10 md:gap-20 sm:grid-cols-2 lg:grid-cols-3 text-center text-gray-700">
     		<a href="/services#visage" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-      					src="/src/assets/face1.png"
-      					alt=""
-      					class="w-full h-full object-cover"
-    				/>
+					<Image src={face1} alt="Soins du visage à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Soins du visage</h3>
       			<p class="text-sm">
@@ -126,11 +121,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
     		<a href="/services#regard" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-      					src="/src/assets/eyes1.png"
-      					alt=""
-      					class="w-full h-full object-cover"
-    				/>
+					<Image src={eyes1} alt="Soins de beauté du regard à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Beauté du regard</h3>
       			<p class="text-sm">
@@ -140,11 +131,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
 			<a href="/services#mains" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-      					src="/src/assets/hands.png"
-      					alt=""
-      					class="w-full h-full object-cover"
-    				/>
+					<Image src={hands} alt="Soins beauté des mains et des pieds à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Beauté des mains & pieds</h3>
       			<p class="text-sm">
@@ -154,11 +141,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
 			<a href="/services#relaxant" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-      					src="/src/assets/massage1.png"
-      					alt=""
-      					class="w-full h-full object-cover"
-    				/>
+					<Image src={massage1} alt="Soins relaxants à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Soins relaxants</h3>
       			<p class="text-sm">
@@ -168,11 +151,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
     		<a href="/services#epilations" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-      					src="/src/assets/wax1.png"
-      					alt=""
-      					class="w-full h-full object-cover"
-    				/>
+					<Image src={wax1} alt="Épilation à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Épilation</h3>
       			<p class="text-sm">
@@ -182,11 +161,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
 			<a href="/services#technologies" class="hover:opacity-75">
 				<div class="aspect-square w-full overflow-hidden">
-					<img
-    					src="/src/assets/weightloss1.png"
-    					alt=""
-    					class="w-full h-full object-cover"
-  					/>
+					<Image src={weightloss1} alt="Technologies esthétiques à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
 				</div>
       			<h3 class="text-lg mb-2 font-semibold">Technologies esthétiques</h3>
       			<p class="text-sm">
@@ -195,13 +170,11 @@ import HomeBanner from '../components/HomeBanner.astro'
     		</a>
   		</div>
 
-  	<div class="text-center mt-16 pb-20">
-    	<a href="/services" class="bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
- 			Voir tous les soins détaillés
-  		</a>
-	</div>
-</section>
-
-
+  		<div class="text-center mt-16 pb-20">
+    		<a href="/services" class="bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
+ 				Voir tous les soins détaillés
+  			</a>
+		</div>
+	</section>
   	
 </Layout>

@@ -1,13 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import marble from '/src/assets/marble.jpg';
 import '../styles/global.css'
 ---
 
 <section class="relative w-full h-[90vh] mx-auto overflow-hidden">
-  	<img
-    	src="/src/assets/marble_2.jpg"
-    	alt="Institut de beauté à Bidart"
-    	class="absolute inset-0 w-full h-full object-cover"
-  	/>
+  	<Image src={marble} alt="Institut de beauté à Bidart" class="absolute inset-0 w-full h-full object-cover" />
 
   	<!-- Optional dark overlay for readability -->
   	<div class="absolute inset-0 bg-black/30"></div>

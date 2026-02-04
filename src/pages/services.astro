@@ -1,4 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import eyes2 from '/src/assets/eyes2.png';
+import face2 from '/src/assets/face2.png';
+import feet from '/src/assets/feet.png';
+import massage2 from '/src/assets/massage2.png';
+import wax2 from '/src/assets/wax2.png';
+import weightloss2 from '/src/assets/weightloss2.png';
+
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -15,11 +23,7 @@ import Layout from '../layouts/Layout.astro';
                     
                     <div id="visage" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/face2.png"
-                                alt="Soins du visage à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={face2} alt="Détails des soins du visage à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-neutral-100">
@@ -38,11 +42,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div id="regard" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/eyes2.png"
-                                alt="Soins de beauté du regard à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={eyes2} alt="Détails des soins de beauté du regard à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-brown-light">
@@ -61,11 +61,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div id="mains" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/feet.png"
-                                alt="Soins beauté des mains et des pieds à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={feet} alt="Détails des soins beauté des mains et des pieds à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-neutral-100">
@@ -84,11 +80,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div id="relaxant" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/massage2.png"
-                                alt="Soins relaxants à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={massage2} alt="Détails des soins relaxants à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-brown-light">
@@ -107,11 +99,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div id="epilations" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/wax2.png"
-                                alt="Épilation à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={wax2} alt="Détails des soins d'épilation à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-neutral-100">
@@ -130,11 +118,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div id="technologies" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
-                            <img
-                                src="/src/assets/weightloss2.png"
-                                alt="Technologies esthétiques à L’Atelier Zen à Bidart"
-                                class="w-full h-full object-cover"
-                            />
+                            <Image src={weightloss2} alt="Détails des technologies esthétiques à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div class="px-10 py-6 flex items-center bg-brown-light">
