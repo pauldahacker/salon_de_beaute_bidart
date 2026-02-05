@@ -15,25 +15,22 @@ import HomeBanner from '../components/HomeBanner.astro'
 ---
 
 <Layout>
-	<h1 class="sr-only">
-  		L’Atelier Zen – Institut de beauté et bien-être à Bidart
-	</h1>
 
 	<HomeBanner>
 	</HomeBanner>
 	<section class="pt-16 pb-16 bg-brown-light">
 		<div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 px-6">
   			<h2 class="md:col-span-2 text-2xl md:text-4xl font-bold md:tracking-widest text-center uppercase">
-    			L’Atelier Zen, Institut de beauté et bien-être à Bidart
+    			Un lieu pour ralentir
   			</h2>
 
-  			<p class="text-lg text-gray-700 max-w-xl text-center">
+  			<p class="text-lg text-gray-700 max-w-xl mx-auto text-center md:text-left">
     			Inspiré par l’océan et le rythme apaisant du Pays Basque,
     			L’Atelier Zen vous invite à vous laisser emporter
    				par un moment de calme, de douceur et de reconnexion.
   			</p>
 
-  			<p class="text-lg text-gray-700 max-w-xl text-center">
+  			<p class="text-lg text-gray-700 max-w-xl mx-auto text-center md:text-left">
     			Dans un espace chaleureux, femmes et hommes
     			sont accueillis avec écoute et bienveillance,
     			pour vivre une parenthèse de détente
@@ -170,11 +167,54 @@ import HomeBanner from '../components/HomeBanner.astro'
     		</a>
   		</div>
 
-  		<div class="text-center mt-16 pb-20">
-    		<a href="/services" class="bg-black text-gray-100 px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
+  		<div class="mt-16 pb-20 max-w-xl mx-auto flex flex-col gap-4 md:flex-row md:justify-center">
+    		<a href="/services" class="mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-white transition">
  				Voir tous les soins détaillés
+  			</a>
+			<a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="mx-auto bg-black text-white px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
+ 				Prendre rendez-vous
   			</a>
 		</div>
 	</section>
+
+	<section class="bg-neutral-100 py-20">
+  		<div class="max-w-5xl mx-auto px-6 text-center">
+    
+    		<h2 class="text-2xl md:text-4xl font-bold uppercase mb-12 tracking-widest">
+      			Ils nous font confiance
+    		</h2>
+
+    		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      			<div class="bg-white p-8 shadow-sm">
+        			<p class="text-gray-700 italic mb-6">
+          				“L’Atelier Zen est devenu mon rendez-vous bien-être. Les soins sont personnalisés
+          				et l’ambiance est apaisante dès l’entrée.”
+        			</p>
+        			<p class="font-semibold">— Juliette B.</p>
+        			<p class="text-sm text-gray-500">Cliente régulière</p>
+      			</div>
+
+				<div class="bg-white p-8 shadow-sm">
+        			<p class="text-gray-700 italic mb-6">
+          				“Un vrai moment de détente. L’accueil est chaleureux et les soins sont réalisés avec beaucoup de douceur.
+          				On se sent écoutée et vraiment prise en charge.”
+        			</p>
+        			<p class="font-semibold">— Claire M.</p>
+        			<p class="text-sm text-gray-500">Massage</p>
+      			</div>
+
+      			<div class="bg-white p-8 shadow-sm">
+        			<p class="text-gray-700 italic mb-6">
+          				“Professionnalisme, douceur et résultats visibles. Je recommande sans hésiter.”
+        			</p>
+        			<p class="font-semibold">— Bruno R.</p>
+        			<p class="text-sm text-gray-500">Épilation</p>
+      			</div>
+
+    		</div>
+  		</div>
+	</section>
+
   	
 </Layout>
