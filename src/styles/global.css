@@ -6,6 +6,10 @@
   --color-brown-dark: #4f3b26;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     font-family: 'Tenor Sans', 'Cormorant', 'Arsenal SC', system-ui, sans-serif;
 }

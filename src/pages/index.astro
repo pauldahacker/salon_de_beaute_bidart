@@ -18,8 +18,8 @@ import HomeBanner from '../components/HomeBanner.astro'
 
 	<HomeBanner>
 	</HomeBanner>
-	<section class="pt-16 pb-16 bg-brown-light">
-		<div class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 px-6">
+	<section class="pt-16 pb-16 bg-brown-light ">
+		<div data-aos="fade-down" class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 px-6">
   			<h2 class="md:col-span-2 text-2xl md:text-4xl font-bold md:tracking-widest text-center uppercase">
     			Un lieu pour ralentir
   			</h2>
@@ -45,7 +45,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 
 	<section>
 		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-neutral-100">
-  			<div class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
+  			<div data-aos="fade-up-right" class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
     			<div class="max-w-2xl mx-auto">
       				<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
         				L’expertise au service du bien-être
@@ -57,16 +57,16 @@ import HomeBanner from '../components/HomeBanner.astro'
       				</p>
     			</div>
   			</div>
-  			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
-    			<Image src={skin} alt="Séance à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
+  			<div data-aos="fade-up-left" class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
+    			<Image src={skin} alt="Séance à l'Institut de beauté à Bidart" width={2560} height={1400} class="w-full h-full object-cover" />
   			</div>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-brown-light">
-			<div class="w-full h-[30vh] md:h-full overflow-hidden">
-				<Image src={faceTreatment} alt="Soin de visage à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
+			<div data-aos="fade-up-right" class="w-full h-[30vh] md:h-full overflow-hidden">
+				<Image src={faceTreatment} alt="Soin de visage à l'Institut de beauté à Bidart" width={2560} height={1400} class="w-full h-full object-cover" />
 			</div>
-			<div class="flex items-center px-6 py-12 md:py-0">
+			<div data-aos="fade-up-left" class="flex items-center px-6 py-12 md:py-0">
 				<div class="max-w-2xl mx-auto">
 					<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
 						Une expérience sur mesure
@@ -81,7 +81,7 @@ import HomeBanner from '../components/HomeBanner.astro'
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 md:h-[40vh] bg-neutral-100">
-  			<div class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
+  			<div data-aos="fade-up-right" class="order-2 md:order-1 flex items-center px-6 py-12 md:py-0">
     			<div class="max-w-2xl mx-auto">
       				<h3 class="mb-4 text-xl md:text-2xl font-bold md:tracking-widest uppercase">
         				Des produits d'excellence
@@ -93,8 +93,8 @@ import HomeBanner from '../components/HomeBanner.astro'
       				</p>
     			</div>
   			</div>
-  			<div class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
-    			<Image src={portrait} alt="Résultat d'une expérience à l'Institut de beauté à Bidart" class="w-full h-full object-cover" />
+  			<div data-aos="fade-up-left" class="order-1 md:order-2 w-full h-[30vh] md:h-full overflow-hidden">
+    			<Image src={portrait} alt="Résultat d'une expérience à l'Institut de beauté à Bidart" width={2560} height={1400} class="w-full h-full object-cover" />
   			</div>
 		</div>
 	</section>
@@ -106,7 +106,7 @@ import HomeBanner from '../components/HomeBanner.astro'
   		</h2>
 
   		<div class="max-w-6xl px-4 mx-auto grid gap-10 md:gap-20 sm:grid-cols-2 lg:grid-cols-3 text-center text-gray-700">
-    		<a href="/services#visage" class="p-8 hover:border-2">
+    		<a href="/services#visage" data-aos="fade-down-right" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={face1} alt="Soins du visage à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -116,7 +116,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			</p>
     		</a>
 
-    		<a href="/services#regard" class="p-8 hover:border-2">
+    		<a href="/services#regard" data-aos="fade-down" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={eyes1} alt="Soins de beauté du regard à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -126,7 +126,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			</p>
     		</a>
 
-			<a href="/services#mains" class="p-8 hover:border-2">
+			<a href="/services#mains" data-aos="fade-down-left" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={hands} alt="Soins beauté des mains et des pieds à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -136,7 +136,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			</p>
     		</a>
 
-			<a href="/services#relaxant" class="p-8 hover:border-2">
+			<a href="/services#relaxant" data-aos="fade-up-right" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={massage1} alt="Soins relaxants à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -146,7 +146,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			</p>
     		</a>
 
-    		<a href="/services#epilations" class="p-8 hover:border-2">
+    		<a href="/services#epilations" data-aos="fade-up" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={wax1} alt="Épilation à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -156,7 +156,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			</p>
     		</a>
 
-			<a href="/services#technologies" class="p-8 hover:border-2">
+			<a href="/services#technologies" data-aos="fade-up-left" class="p-8 hover:border-2">
 				<div class="w-full overflow-hidden flex justify-center">
 					<Image src={weightloss1} alt="Technologies esthétiques à L’Atelier Zen à Bidart" class="object-cover max-w-[16rem] mx-auto md:max-w-none md:w-full" />
 				</div>
@@ -171,7 +171,7 @@ import HomeBanner from '../components/HomeBanner.astro'
     		<a href="/services" class="mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-white transition">
  				Voir tous les soins détaillés
   			</a>
-			<a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="mx-auto bg-black text-white px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
+			<a href="/contact#reservation" class="mx-auto bg-black text-white px-8 py-3 text-sm border-2 border-black hover:bg-white hover:text-gray-900 transition">
  				Prendre rendez-vous
   			</a>
 		</div>
@@ -184,7 +184,7 @@ import HomeBanner from '../components/HomeBanner.astro'
       			Ils nous font confiance
     		</h2>
 
-    		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    		<div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
       			<div class="bg-white p-8 shadow-sm">
         			<p class="text-gray-700 italic mb-6">

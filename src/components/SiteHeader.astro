@@ -17,25 +17,40 @@ import '../styles/global.css'
         	<a href="/contact" class="px-6 py-2 border-2 border-transparent hover:border-gray-900 transition">
                 Contact
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="ml-4 inline-block bg-black text-white px-5 py-2 text-sm border-2 border-black hover:bg-transparent hover:text-gray-900 transition">
+            <a href="/contact#reservation" class="ml-4 inline-block bg-black text-white px-5 py-2 text-sm border-2 border-black hover:bg-transparent hover:text-gray-900 transition">
                 Prendre rendez-vous
             </a>
         </nav>
 
-   		<button id="menu-button" class="md:hidden text-2xl" aria-label="Menu">
- 			☰
+   		<!-- Mobile menu button -->
+		<button id="menu-button" class="md:hidden text-2xl z-50 relative" aria-label="Menu">
+  			<span id="menu-icon">☰</span>
 		</button>
-				
-		<!-- Mobile menu content -->
-		<nav id="mobile-menu" class="md:hidden hidden absolute top-full left-0 w-full bg-neutral-50 border-b border-t">
-  			<ul class="flex flex-col text-center pt-6 space-y-4">
-                
-    			<li><a href="/" class="block">Accueil</a></li>
-    			<li><a href="/services" class="block">Services</a></li>
-    			<li><a href="/contact" class="block">Contact</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="block bg-black text-gray-100 px-5 py-2 border-2 border-black hover:bg-transparent hover:text-gray-900 transition">Prendre rendez-vous</a></li>
-                
-  			</ul>
+
+		<!-- Mobile Menu -->
+		<nav id="mobile-menu" class="fixed top-[10vh] left-0 right-0 bottom-0 bg-neutral-50 z-40 hidden flex flex-col justify-center items-center text-xl space-y-8">
+
+			<a href="/" class="hover:opacity-60 transition">
+    			Accueil
+  			</a>
+
+  			<a href="/services" class="hover:opacity-60 transition">
+    			Services
+  			</a>
+
+  			<a href="/contact" class="hover:opacity-60 transition">
+    			Contact
+  			</a>
+
+  			<a href="/contact#reservation" class="mt-6 bg-black text-white px-8 py-3 text-sm border-2 border-black hover:bg-transparent hover:text-black transition">
+    			Prendre rendez-vous
+  			</a>
+
 		</nav>
+
+
+  </div>
+</nav>
+
     </div>
 </header>

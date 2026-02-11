@@ -25,12 +25,12 @@ import Layout from '../layouts/Layout.astro';
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] md:gap-y-8 items-stretch">
                     
-                    <div id="visage" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
+                    <div id="visage" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={face2} alt="Détails des soins du visage à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-neutral-100">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-neutral-100">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Soins du visage</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -41,18 +41,18 @@ import Layout from '../layouts/Layout.astro';
                                 <li>• Soin hydratant & apaisant – 60 min · à partir de 75 €</li>
                                 <li>• Soin expert personnalisé – 75 min · à partir de 95 €</li>
                             </ul>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
                     </div>
 
-                    <div id="regard" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
+                    <div id="regard" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={eyes2} alt="Détails des soins de beauté du regard à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-brown-light">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-brown-light">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Beauté du regard</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -63,18 +63,18 @@ import Layout from '../layouts/Layout.astro';
                                 <li>• Browlift & restructuration · à partir de 55 €</li>
                                 <li>• Teinture cils ou sourcils · à partir de 25 €</li>
                             </ul>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
                     </div>
 
-                    <div id="mains" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
+                    <div id="mains" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={feet} alt="Détails des soins beauté des mains et des pieds à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-neutral-100">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-neutral-100">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Beauté des mains et des pieds</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -85,18 +85,18 @@ import Layout from '../layouts/Layout.astro';
                                 <li>• Vernis semi-permanent · 40 €</li>
                                 <li>• Beauté des pieds · 55 €</li>
                             </ul>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
                     </div>
 
-                    <div id="relaxant" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
+                    <div id="relaxant" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={massage2} alt="Détails des soins relaxants à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-brown-light">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-brown-light">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Soins relaxants</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -107,18 +107,18 @@ import Layout from '../layouts/Layout.astro';
                                 <li>• Massage profond – 75 min · 95 €</li>
                                 <li>• Rituel détente corps & esprit – 90 min · 120 €</li>
                             </ul>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
                     </div>
 
-                    <div id="epilations" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
+                    <div id="epilations" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-neutral-100">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={wax2} alt="Détails des soins d'épilation à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-neutral-100">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-neutral-100">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Épilation</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -129,18 +129,18 @@ import Layout from '../layouts/Layout.astro';
                                 <li>• Jambes complètes · à partir de 35 €</li>
                                 <li>• Épilation homme · sur demande</li>
                             </ul>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
                     </div>
 
-                    <div id="technologies" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
+                    <div id="technologies" data-aos="fade-left" class="scroll-mt-24 flex items-center justify-center md:bg-brown-light">
                         <div class="aspect-square w-full max-w-xs overflow-hidden">
                             <Image src={weightloss2} alt="Détails des technologies esthétiques à L’Atelier Zen à Bidart" class="w-full h-full object-cover" />
                         </div>
                     </div>
-                    <div class="px-10 py-6 flex items-center bg-brown-light">
+                    <div data-aos="fade-right" class="px-10 py-6 flex items-center bg-brown-light">
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Technologies esthétiques</h3>
                             <p class="text-gray-700 text-sm md:text-base mb-2">
@@ -153,7 +153,7 @@ import Layout from '../layouts/Layout.astro';
                             <p class="text-xs text-gray-500 mt-2">
                                 Tarifs et protocoles détaillés sur consultation.
                             </p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.planity.com/" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
+                            <a href="/contact#reservation" class="inline-block mt-6 mx-auto text-gray-900 px-8 py-3 text-sm border-2 border-black hover:bg-black hover:text-gray-100 transition">
  				                Prendre rendez-vous
   			                </a>
                         </div>
