@@ -22,8 +22,6 @@ const { title = "L'Atelier Zen - Institut de Beauté à Bidart", description = "
 		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Tenor+Sans&display=swap" rel="stylesheet">
 	</head>
 
-	<script type="module" src="/src/scripts/main.js"></script>
-
 	<body class="text-gray-900 bg-white font-body">
 		<SiteHeader>
 		</SiteHeader>
@@ -32,6 +30,12 @@ const { title = "L'Atelier Zen - Institut de Beauté à Bidart", description = "
     	</main>
 		<SiteFooter>
 		</SiteFooter>
+
+		<script>
+			import { initSite } from '../scripts/main.js';
+			// This runs as soon as the browser receives the script
+			initSite();
+    	</script>
 	</body>
 </html>
 
