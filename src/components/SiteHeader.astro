@@ -2,8 +2,8 @@
 import '../styles/global.css'
 ---
 
-<header class="top-0 sticky relative h-[10vh] z-50 bg-neutral-50 border-b">
-    <div class="max-w-5xl px-6 lg:px-0 h-full mx-auto flex items-center justify-between">
+<header class="sticky top-0 w-full z-50 bg-neutral-50/90 backdrop-blur-sm border-b">
+    <div class="max-w-5xl h-[10vh] px-6 lg:px-0 mx-auto flex items-center justify-between">
        	<a href="/" class="text-3xl md:text-4xl font-heading font-bold">
  			L'Atelier Zen
 		</a>
@@ -22,32 +22,27 @@ import '../styles/global.css'
             </a>
         </nav>
 
-   		<!-- Mobile menu button -->
-		<button id="menu-button" class="md:hidden text-2xl z-50 relative" aria-label="Menu">
+		<button id="menu-button" class="md:hidden text-2xl z-60 relative" aria-label="Menu">
   			<span id="menu-icon">☰</span>
 		</button>
-
-		<!-- Mobile Menu -->
-		<nav id="mobile-menu" class="fixed top-[10vh] left-0 right-0 bottom-0 bg-neutral-50 z-40 hidden flex flex-col justify-center items-center text-xl space-y-8">
-
-			<a href="/" class="hover:opacity-60 transition">
-    			Accueil
-  			</a>
-
-  			<a href="/services" class="hover:opacity-60 transition">
-    			Services
-  			</a>
-
-  			<a href="/contact" class="hover:opacity-60 transition">
-    			Contact
-  			</a>
-
-  			<a href="/contact#reservation" class="mt-6 bg-black text-white px-8 py-3 text-sm border-2 border-black hover:bg-transparent hover:text-black transition">
-    			Prendre rendez-vous
-  			</a>
-
-		</nav>
-
-
 	</div>
+
+	<nav id="mobile-menu" class="hidden flex-col w-full py-8 space-y-6 items-center text-center md:hidden border-t">
+		<a href="/" class="hover:opacity-60 transition">
+    		Accueil
+  		</a>
+
+  		<a href="/services" class="hover:opacity-60 transition">
+    		Services
+  		</a>
+
+  		<a href="/contact" class="hover:opacity-60 transition">
+    		Contact
+  		</a>
+
+  		<a href="/contact#reservation" class="bg-black text-white px-8 py-3 border-2 border-black hover:bg-transparent hover:text-black transition">
+    		Prendre rendez-vous
+  		</a>
+	</nav>
+	
 </header>

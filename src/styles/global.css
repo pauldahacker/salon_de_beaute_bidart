@@ -6,8 +6,13 @@
   --color-brown-dark: #4f3b26;
 }
 
-html, body {
+main {
   overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

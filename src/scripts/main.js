@@ -13,18 +13,30 @@ export function initSite() {
     const menuIcon = document.getElementById("menu-icon");
     const mobileMenu = document.getElementById("mobile-menu");
 
-    if (menuButton && mobileMenu) {
-        menuButton.addEventListener("click", () => {
-            const isOpened = !mobileMenu.classList.contains("hidden");
-            if (!isOpened) {
-                mobileMenu.classList.remove("hidden");
-                if (menuIcon) menuIcon.textContent = "✕";
-                document.documentElement.classList.add("overflow-hidden");
-            } else {
-                mobileMenu.classList.add("hidden");
-                if (menuIcon) menuIcon.textContent = "☰";
-                document.documentElement.classList.remove("overflow-hidden");
-            }
-        });
+    // Inside your initSite() function in main.js
+const menuLinks = mobileMenu.querySelectorAll('a');
+
+menuButton.addEventListener("click", () => {
+    const isOpened = !mobileMenu.classList.contains("hidden");
+    
+    if (!isOpened) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex"); // Ensure flex is applied when shown
+        if (menuIcon) menuIcon.textContent = "✕";
+    } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+        if (menuIcon) menuIcon.textContent = "☰";
     }
+});
+
+// Close menu when a link is clicked
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+        if (menuIcon) menuIcon.textContent = "☰";
+        document.documentElement.classList.remove("overflow-hidden");
+    });
+});
 }
